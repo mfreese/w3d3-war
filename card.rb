@@ -34,7 +34,7 @@ class Card
         self.value = face_to.i
       end
     end
-  end
+end
 
   # card_one = Card.new ("J", "Hearts")
   # puts card_one.inspect

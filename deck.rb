@@ -9,10 +9,26 @@ def make_deck
 
   face.each do |face|
   suit.each do |suit|
-  card_box << Card.new ( face, suit )
+  card_box << Card.new( face, suit )
 end
 end
 end
 def shuffle
   card_box.shuffle!
+
+  def draw
+    card_box.shift
+  end
+
+  def restock?
+    card_box.restock?
+  end
+
+  def length
+    card_box.length
+  end
+
+  def push(push)
+    card_box.push(push)
+  end
 end
